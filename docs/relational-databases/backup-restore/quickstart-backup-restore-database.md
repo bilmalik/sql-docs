@@ -104,6 +104,7 @@ To restore your database, follow these steps:
 
 1. Launch [SQL Server Management Studio (SSMS)](../../ssms/download-sql-server-management-studio-ssms.md) and connect to your SQL Server instance.
 1. Right-click the **Databases** node in **Object Explorer** and select **Restore Database...**.
+2. Before pressing ok click on Options and in "Server Connections" select the checkbox "Close existing connections to destination database"  Failure to do so will fail the database restore with the following error "SQL-Server: Error - Exclusive access could not be obtained because the database is in use"
 
     :::image type="content" source="media/quickstart-backup-restore-database/restore-db-ssms1.png" alt-text="Restore a database":::
 
